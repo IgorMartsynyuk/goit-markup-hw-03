@@ -53,11 +53,14 @@ img {
   margin-right: auto;
   margin-left: auto;
 }
+header {
+  border-bottom: #ececee 1px solid;
+}
 header > .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  text-align: left;
 }
 .navigation {
   font-weight: 500;
@@ -67,6 +70,8 @@ header > .container {
 .navigation-list {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 .logo {
   color: #2196f3;
@@ -80,15 +85,14 @@ header > .container {
 .navigation-list > li:not(:last-child) {
   margin-right: 50px;
 }
-.tel-link {
-  margin-left: 50px;
-}
-.mail-link {
-  margin-left: 331px;
-}
+
 .list-contacts {
   display: flex;
 }
+.list-contacts > li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .navigation-list-item {
   font-weight: 500;
   line-height: 1.142;
@@ -227,7 +231,9 @@ header > .container {
   font-size: 36px;
 }
 /*--робота--*/
-
+.you-work {
+  padding-bottom: 94px;
+}
 .work {
   font-weight: bold;
   font-size: 36px;
@@ -239,6 +245,9 @@ header > .container {
 }
 .you-work-list {
   display: flex;
+}
+.you-work-*list {
+  margin-right: 50px;
 }
 .you-work-list > li:not(:last-child) {
   margin-right: 30px;
@@ -282,7 +291,7 @@ header > .container {
 .team-foto {
   display: block;
 }
-.taem-card {
+.team-card {
   padding: 30px;
 }
 .name-comand {
@@ -439,6 +448,9 @@ header > .container {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-portfolio:hover,
